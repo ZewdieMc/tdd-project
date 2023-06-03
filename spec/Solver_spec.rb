@@ -1,0 +1,2 @@
+describe Solver do
+end
