@@ -8,7 +8,11 @@ describe Solver do
     expect(@solver).to be_an_instance_of Solver
   end
 
-  it "should have a solve method" do
+  it "should solve factorial of 5" do
     expect(@solver.factorial(5)).to eq(120)
+  end
+
+  it "should solve factorial of 0" do
+    expect(@solver.factorial(0)).to eq(1)
   end
 end
