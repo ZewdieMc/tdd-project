@@ -23,4 +23,16 @@ describe Solver do
   it 'Should reverse a string' do
     expect(@solver.reverse('hello')).to eq('olleh')
   end
+
+  it 'Should return fizz if the number is divisible by 3' do
+    expect(@solver.fizzbuzz(3)).to eq('fizz')
+  end
+
+  it 'Should return buzz if the number is divisible by 5' do
+    expect(@solver.fizzbuzz(5)).to eq('buzz')
+  end
+
+  it 'Should return fizzbuzz if the number is divisible by 3 and 5' do
+    expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+  end
 end
